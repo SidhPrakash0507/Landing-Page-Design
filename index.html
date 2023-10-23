@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Sidh Prakash">
+    <title>AINerd</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+</head>
+<style>
+
+
+
+header{
+    width: 100%;
+    min-height: 100vh;
+    align-content: flex-start;
+}
+.logo{
+    font-size: 2em;
+    font-weight: bolder;
+    font-family: sans-serif;
+    padding-bottom: 70px;
+
+}
+.logo span{
+    color: rgb(0, 187, 255);
+}
+nav{
+    width: 100%;
+    height: 7em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  
+    text-decoration: wavy;
+
+  
+   
+}
+.Menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.Menu a{
+    text-decoration:none;
+    color: #232323;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 5px 10px;
+    padding-left: 20px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 70px;
+
+    
+}
+.Menu a:first-child{
+    color: rgb(0, 187, 255);
+}
+.Menu a:hover{
+    color: rgb(0, 187, 255);
+    transition: 0.4s;
+    text-decoration-line: 1px solid rgb(0, 187, 255);
+}
+.Register a{
+    color: rgba(0, 0, 0, 0.638);
+    background: rgb(0, 187, 255);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 0.4s;
+
+
+}
+.Register a:hover{
+    background: transparent;
+    border: 1.1px solid rgb(0, 187, 255);
+}
+
+
+
+.Searchbox{
+    border-radius: 8px;
+    
+    outline-color: rgb(0, 187, 255);
+
+  
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.left{
+    flex-basis: 40%;
+    padding-bottom: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.right{
+    flex-basis: 50%;
+}
+.left h1{
+    font-size: 2.7em;
+    margin-bottom: 10px;
+}
+.left h1 span{
+    color: rgb(0, 187, 255);
+}
+.left p {
+    line-height: 1.7em;
+}
+.left a{
+    text-decoration: none;
+    color: black;
+    background: rgb(0, 187, 255);
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+.left a:hover{
+    background: transparent;
+    border: 1.1px solid rgb(0, 187, 255);
+}
+
+#mark{
+    margin-top: 1.5em;
+    padding: 15px;
+    font-size: 2em;
+    color: black;
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+#mark:hover{
+    background: #3b5998;
+    color:white;
+    border-radius: 40%;
+}
+
+#microsoft{
+    margin-top: 1.5em;
+    padding: 15px;
+    font-size: 2em;
+    color: black;
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+
+#microsoft:hover{
+    background: rgb(10, 102, 194);
+    color:white;
+    border-radius: 40%;
+
+}
+#insta{
+    margin-top: 1.5em;
+    padding: 15px;
+    font-size: 2em;
+    color: black;
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+#insta:hover{
+    background: rgba(194, 10, 176, 0.767);
+    color:white;
+    border-radius: 40%;
+
+
+
+}
+#larry{
+    margin-top: 1.5em;
+    padding: 15px;
+    font-size: 2em;
+    color: black;
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+#larry:hover{
+    background: greenyellow;
+    color:white;
+    border-radius: 40%;
+
+}
+
+#musk{
+    margin-top: 1.5em;
+    padding: 15px;
+    font-size: 2em;
+    color: black;
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+#musk:hover{
+    background:#00acee;
+    color:white;
+    border-radius: 40%;
+}
+
+#lion{
+    margin-top: 1.5em;
+    padding: 15px;
+    font-size: 2em;
+    color: black;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#lion:hover{
+    background:#CD201F;
+    color:white;
+    border-radius: 40%;
+}
+/*-------------------------------------------interval----------*/
+
+
+footer{
+    position: relative;
+    background: #111;
+    background: #000;
+    width: 100vw;
+    padding-bottom: 20px;
+    padding:  0;
+    text-align: center;
+   
+    color: #fff;
+} 
+.foot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.foot h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.foot p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.handles{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.handles li{
+    margin: 0 10px;
+}
+.handles a{
+    text-decoration: none;
+    color: #fff;
+}
+.handles a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.handles a:hover i{
+    background: aqua;
+}
+
+.foot2{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.foot2 p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.foot2 span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+@media only screen and (max-width:760px){
+    .logo{
+        width:100%;
+        text-align: center;
+        font: size 2.45em;
+    }
+  .Menu{
+    font-size: 0.5px;
+  }
+  .Register{
+    size: 5px;
+  }
+  .handles{
+    font-size:18px;
+  }
+}
+
+</style>
+<body>
+
+  <header>
+      <nav>
+
+            <div class="logo">
+                AI <span>Nerd</span>
+            </div>
+            <div class="Menu">
+                <a href="#">Home</a>
+                <a href="#">Blogs</a>
+                <a href="#">MarketPlace</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <div class="Serachbox">
+                <input type="text" placeholder="Search Here">
+                <a href="#"><i class="fa fa-search" id="icon"></i></a>
+
+            </div>
+
+
+
+
+
+
+            <div class="Register">
+                <a href="#">Sign In</a>
+            </div>
+
+
+            </div>
+
+
+            </i>
+          
+           
+                </i>
+
+            </div>
+        </nav>
+        <div class="container">
+            <div class="left">
+                <h1>Welcome to AI <span>Nerd</span></h1>
+                <p>Hello Geeks.We Provide Content of Artifical Intelligence,Machine Learning & Robotics and its Current
+                    Information is Here. We post Regular blogs and Provide Products of the most Booming Industry in the
+                    Market. To know more Contact us. And Stay tuned With your Website <b><i>AI Nerd.</i> </b></p>
+                <br>
+                <a href="#">Explore the Phenomenon </a>
+                <br>
+                <i class="fa fa-facebook" aria-hidden="true" id="mark"></i>
+                <i class="fa fa-linkedin" aria-hidden="true" id="microsoft"></i>
+                <i class="fa fa-instagram" aria-hidden="true" id="insta"></i>
+                <i class="fa fa-google" aria-hidden="true" id="larry"></i>
+                <i class="fa fa-twitter" aria-hidden="true" id="musk"></i>
+                <i class="fa fa-youtube-play" aria-hidden="true" id="lion"> </i>
+
+
+
+
+            </div>
+            <div class="right">
+                <img src="2002.i039.010_chatbot_messenger_ai_isometric_set-05.jpg" width="470">
+
+            </div>
+        </div>
+        <div class="semicircle">
+
+        </div>
+    </header>
+
+
+    <footer>
+        <div class="foot">
+            <h3>AI <span>Nerd</span></h3>
+            <p><span>"Explore the Phenomenon".</span> To know more Join and Follow us on our Social Media Handles.</p>
+            <ul class="handles" type="none">
+                <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+                <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                <li><i class="fa fa-google" aria-hidden="true"></i></li>
+                <li><i class="fa fa-twitter" aria-hidden="true"></i>
+                <li><i class="fa fa-youtube-play" aria-hidden="true"></i></li>
+                </li>
+                </li>
+
+            </ul>
+        </div>
+        <div class="foot2">
+
+            <p>copyright &2024 AI Nerd. degined by<span> AI Nerd Org</span> All Rights Reserved</p>
+        </div>
+
+
+        <script>
+          alert('Click ok to Enter');
+          </script>
+
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
